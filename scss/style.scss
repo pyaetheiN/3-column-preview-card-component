@@ -16,6 +16,7 @@ body{
     align-items: center;
     min-height: 100vh; // important
     justify-content: center;
+    padding: 0 1em;
 }
 main{
     max-width: 968px;
@@ -65,6 +66,7 @@ main{
         font-family: $big;
         color: $verylightgray;
         font-weight: 700;
+        text-transform: uppercase;
     }
     &__desc{
         color: $transparentwhite;
@@ -93,6 +95,7 @@ main{
     }
     main{
         grid-template-columns: 1fr;
+        max-width: 468px;
     }
     .card{
         padding: 50px 70px 50px 50px;
