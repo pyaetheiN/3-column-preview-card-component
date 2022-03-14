@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #fffcf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  max-width: 968px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 8px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-1 {
+  background-color: #e38826;
+}
+
+.card-1 a {
+  color: #e38826;
+  font-weight: 700;
+}
+
+.card-2 {
+  background-color: #006970;
+}
+
+.card-2 a {
+  color: #006970;
+  font-weight: 700;
+}
+
+.card-3 {
+  background-color: #004241;
+}
+
+.card-3 a {
+  color: #004241;
+  font-weight: 700;
+}
+
+.mb-1 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.card {
+  padding: 50px 65px 50px 50px;
+}
+
+.card__title {
+  font-size: 2.7em;
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-weight: 700;
+}
+
+.card__desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.card__btn {
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  display: inline-block;
+  padding: 1em 1.8em;
+  border-radius: 25px;
+}
+
+.card__btn:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  font-weight: 400;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 968px) {
+  body {
+    padding: 1em;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 50px 85px 50px 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

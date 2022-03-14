@@ -1,0 +1,100 @@
+@import "_config.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 15px;
+    font-family: $lex;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    min-height: 100vh; // important
+    justify-content: center;
+}
+main{
+    max-width: 968px;
+    margin: 0 auto;
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+}
+// card backgrounds
+.card-1{
+    background-color: $brightorange;
+
+    a{
+        color: $brightorange;
+        font-weight: 700;
+    }
+}
+.card-2{
+    background-color: $darkcyan;
+    
+    a{
+        color: $darkcyan;
+        font-weight: 700;
+    }
+}
+.card-3{
+    background-color: $verydarkcyan;
+    
+    a{
+        color: $verydarkcyan;
+        font-weight: 700;
+    }
+}
+.mb-1{
+    margin-bottom: 1.5rem;
+}
+.mt-5{
+    margin-top: 5rem;
+}
+.card{
+    padding: 50px 65px 50px 50px;
+
+    &__title{
+        font-size: 2.7em;
+        font-family: $big;
+        color: $verylightgray;
+        font-weight: 700;
+    }
+    &__desc{
+        color: $transparentwhite;
+        font-size: 1em;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+    &__btn{
+        background-color: $verylightgray;
+        border: 2px solid $verylightgray;
+        display: inline-block;
+        padding: 1em 1.8em;
+        border-radius: 25px;
+
+        &:hover{
+            background-color: transparent;
+            color: $verylightgray;
+            font-weight: 400;
+            transition: 0.4s;
+        }
+    }
+}
+@media screen and (max-width: 968px){
+    body{
+        padding: 1em;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        padding: 50px 85px 50px 50px;
+    }
+}
